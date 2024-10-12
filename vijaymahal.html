@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +27,20 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main1.css" rel="stylesheet">
+  <style>
+    .hero {
+        background-color: #f8f9fa;
+        padding: 4rem 0;
+    }
+    .services {
+        background-color: #e9ecef;
+        padding: 3rem 0;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
 </head>
 <body class="index-page">
 
@@ -66,78 +81,64 @@
     </section>
     <!-- /Hero Section -->
 
-    <!-- contact start -->
-    <div class="container my-5">
-      <h1 class="text-center mb-5">Contact Us</h1>
-      
-      <div class="row">
-          <div class="col-md-6 mb-4">
-              <h2 class="mb-4">Get in Touch</h2>
-              <form>
-                  <div class="mb-3">
-                      <input type="text" class="form-control" placeholder="Your Name" required>
-                  </div>
-                  <div class="mb-3">
-                      <input type="email" class="form-control" placeholder="Your Email" required>
-                  </div>
-                  <div class="mb-3">
-                      <input type="tel" class="form-control" placeholder="Your Phone">
-                  </div>
-                  <div class="mb-3">
-                      <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
-          </div>
-          
-          <div class="col-md-6 mb-4">
-              <h2 class="mb-4">Contact Information</h2>
-              <div class="card">
-                  <div class="card-body">
-                      <h3 class="card-title">Vijay Dance Studio</h3>
-                      <p class="card-text">Unisex Dance Studio & Event Management</p>
-                      <ul class="list-unstyled">
-                          <li class="mb-2">
-                              <i class="bi bi-whatsapp me-2"></i>
-                              WhatsApp: 8148028929 / 7010171509
-                          </li>
-                          <li class="mb-2">
-                              <i class="bi bi-envelope me-2"></i>
-                              Email: info@vijaydancestudio.com
-                          </li>
-                          <li class="mb-2">
-                              <i class="bi bi-geo-alt me-2"></i>
-                              Address: No. 226, Rice mill Street, PS vijay Mahal back side, Nallavanpalayam, Thiruvannamalai - 606603
-                          </li>
-                      </ul>
-                  </div>
+    <section class="hero">
+      <div class="container text-center">
+          <img src="https://source.unsplash.com/featured/?luxury,hall" alt="Vijay Mahal" class="img-fluid mb-4">
+          <h1 class="display-4">Welcome to Vijay Mahal A/C</h1>
+          <p class="lead">Your premier destination for comfortable stays and memorable events.</p>
+      </div>
+  </section>
+  
+  <section id="about" class="py-5">
+      <div class="container">
+          <h2 class="mb-4">About Us</h2>
+          <img src="https://source.unsplash.com/featured/?hotel,room" alt="About Vijay Mahal" class="img-fluid mb-3">
+          <p>Vijay Mahal A/C offers a range of comfortable rooms and event spaces for all your needs. We provide both A/C and Non-A/C accommodations to ensure your stay is pleasant and suited to your preferences.</p>
+      </div>
+  </section>
+  
+  <section id="services" class="services">
+      <div class="container">
+          <h2 class="mb-4">Our Services</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <h3>Accommodations</h3>
+                  <img src="https://source.unsplash.com/featured/?hotel,accommodation" alt="Accommodations" class="img-fluid mb-3">
+                  <ul class="list-unstyled">
+                      <li>A/C Rooms</li>
+                      <li>Non-A/C Rooms</li>
+                      <li>VIP Rooms</li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                  <h3>Event Spaces</h3>
+                  <img src="https://source.unsplash.com/featured/?event,venue" alt="Event Spaces" class="img-fluid mb-3">
+                  <ul class="list-unstyled">
+                      <li>Wedding Halls</li>
+                      <li>Conference Rooms</li>
+                      <li>Party Halls</li>
+                  </ul>
               </div>
           </div>
       </div>
-      
-      <div class="row mt-5">
-          <div class="col-12 mb-4">
-              <h3>Location Map</h3>
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315127.0051462078!2d79.02178946906373!3d12.227708366181864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54b92d41e35b87%3A0xa45ae5de62d7f3d7!2sThiruvannamalai!5e0!3m2!1sen!2sin!4v1697198951970!5m2!1sen!2sin"
-                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+  </section>
+  
+  <section id="contact" class="py-5">
+      <div class="container">
+          <h2 class="mb-4">Contact Us</h2>
+          <img src="https://source.unsplash.com/featured/?contact,phone" alt="Contact" class="img-fluid mb-3">
+          <p>For bookings and inquiries, please contact us:</p>
+          <ul class="list-unstyled">
+              <li>Phone: 8870223161 / 7010171509</li>
+              <li>Address: Thandarampattu Main Road, Nallavanpalayam, Tiruvannamalai - 606 603</li>
+          </ul>
       </div>
-      
-      <div class="row mt-5">
-          <div class="col-12 text-center">
-              <p class="lead"><strong>"Don't PANIC, Let's DANCE"</strong></p>
-          </div>
-      </div>
-  </div>
-      <!-- contact end -->
-
+  </section>
   
   
-
   </main>
 
-   <!-- Footer Section -->
+ <!-- Footer Section -->
  <footer class="bg-dark text-white pt-5 pb-4">
   <div class="container">
     <div class="row">
@@ -173,7 +174,6 @@
 </footer>
 <!-- End Footer Section -->
 
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -196,3 +196,4 @@
 </body>
 
 </html>
+
