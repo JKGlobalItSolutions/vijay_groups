@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +27,100 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main1.css" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Banner Styles */
+    .banner {
+        height: 400px;
+        background: url('https://via.placeholder.com/1920x400.png?text=Badminton+Banner') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    /* Section and Card Styles */
+    .game-section {
+        padding: 60px 15px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .card-img-top {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Responsive Zic-Zac Row */
+    .zic-zac-row {
+        margin-bottom: 40px;
+    }
+
+    .zic-zac-row:nth-child(even) .col-md-6:first-child {
+        order: 2;
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 991.98px) {
+        .banner {
+            height: 300px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .banner {
+            height: 250px;
+            padding: 0 10px;
+        }
+
+        .banner h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .banner {
+            height: 200px;
+        }
+
+        .banner h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
 </head>
 <body class="index-page">
 
@@ -62,85 +154,108 @@
   </header>
 
   <main class="main">
+   
+ 
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+  <!-- Banner Section -->
+<div class="banner">
+</div>
 
-    </section>
-    <!-- /Hero Section -->
 
-  
 
-    <div class="container my-5">
-      <h1 class="text-center mb-5">About Vijay Dance Studio</h1>
-      
-      <div class="row mb-4">
-          <div class="col-md-6">
-              <img src="/placeholder.svg?height=400&width=600" alt="Vijay Dance Studio" class="img-fluid rounded">
-          </div>
-          <div class="col-md-6">
-              <h2>Welcome to VDS</h2>
-              <p>Vijay Dance Studio (VDS) is a premier unisex dance studio offering a wide range of dance services and events. Founded by P. Vijayakumar, MBA., LLB, our studio has become a hub for dance enthusiasts in Thiruvannamalai.</p>
-              <p>With our experienced team, including choreographer J. Vasanth Kumar, we bring your dance dreams to life, whether it's for a wedding, birthday, or any special occasion.</p>
-          </div>
+
+<!-- HTML Section for Different Classes -->
+<!-- Carom Section -->
+<div class="container game-section d-flex flex-wrap align-items-center">
+  <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="section-title">Carom</h2>
+      <p>Carom is a precision game that improves hand-eye coordination and concentration. It’s a fun way to develop strategic thinking.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="https://via.placeholder.com/600x300.png?text=Carom" alt="Carom" class="card-img-top">
       </div>
-      
-      <div class="row">
-          <div class="col-md-4 mb-4">
-              <div class="card h-100">
-                  <img src="/placeholder.svg?height=200&width=300" class="card-img-top" alt="Our Services">
-                  <div class="card-body">
-                      <h3 class="card-title">Our Services</h3>
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Marriage Events</li>
-                          <li class="list-group-item">Birthday Events</li>
-                          <li class="list-group-item">Dance Cover</li>
-                          <li class="list-group-item">Surprise Dance</li>
-                          <li class="list-group-item">Flash Mob</li>
-                          <li class="list-group-item">Festival Celebration</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="col-md-4 mb-4">
-              <div class="card h-100">
-                  <img src="/placeholder.svg?height=200&width=300" class="card-img-top" alt="Our Team">
-                  <div class="card-body">
-                      <h3 class="card-title">Our Team</h3>
-                      <p><strong>P. VIJAYAKUMAR, MBA., LLB</strong><br>Founder & Director</p>
-                      <p><strong>J. VASANTH KUMAR</strong><br>Choreographer</p>
-                      <p>Our team of experienced dancers and instructors are passionate about bringing the joy of dance to everyone.</p>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="col-md-4 mb-4">
-              <div class="card h-100">
-                  <img src="/placeholder.svg?height=200&width=300" class="card-img-top" alt="Additional Services">
-                  <div class="card-body">
-                      <h3 class="card-title">Additional Services</h3>
-                      <p>We also offer A/C & Non-A/C rooms for your convenience during events.</p>
-                      <p>Vijay Mahal A/C services available for all your event needs.</p>
-                      <p>Experience our Zumba Dance School for fitness and fun!</p>
-                  </div>
-              </div>
-          </div>
+  </div>
+</div>
+
+<!-- Silambam Section -->
+<div class="container game-section d-flex flex-wrap flex-row-reverse align-items-center">
+  <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="section-title">Silambam</h2>
+      <p>Silambam is an ancient martial art that enhances agility, coordination, and physical fitness while promoting mental discipline.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="https://via.placeholder.com/600x300.png?text=Silambam" alt="Silambam" class="card-img-top">
       </div>
-      
-      <div class="row mt-4">
-          <div class="col-12">
-              <div class="card">
-                  <div class="card-body text-center">
-                      <h2 class="card-title">Contact Us</h2>
-                      <p class="card-text">WhatsApp: 8148028929 / 7010171509</p>
-                      <p class="card-text">Address: No. 226, Rice mill Street, PS vijay Mahal back side, Nallavanpalayam, Thiruvannamalai - 606603</p>
-                      <p class="card-text font-italic">"Don't PANIC, Let's DANCE"</p>
-                  </div>
-              </div>
-          </div>
+  </div>
+</div>
+
+<!-- Drawing Class Section -->
+<div class="container game-section d-flex flex-wrap align-items-center">
+  <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="section-title">Drawing Class</h2>
+      <p>Drawing classes improve creativity and focus. They help athletes develop a keen eye for detail, which is beneficial in sports.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="https://via.placeholder.com/600x300.png?text=Drawing+Class" alt="Drawing Class" class="card-img-top">
       </div>
-    </div>
+  </div>
+</div>
+
+<!-- Abacus Section -->
+<div class="container game-section d-flex flex-wrap flex-row-reverse align-items-center">
+  <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="section-title">Abacus</h2>
+      <p>Learning the abacus enhances mental calculation skills and concentration. It's an excellent way to improve cognitive abilities for competitive sports.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="https://via.placeholder.com/600x300.png?text=Abacus" alt="Abacus" class="card-img-top">
+      </div>
+  </div>
+</div>
+
+<div class="container game-section d-flex flex-wrap align-items-center">
+  <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="section-title">Chess</h2>
+      <p>Chess is a game of strategy and foresight that improves cognitive abilities, critical thinking, and problem-solving skills. It’s an excellent mental exercise.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="https://via.placeholder.com/600x300.png?text=Chess" alt="Chess" class="card-img-top">
+      </div>
+  </div>
+</div>
+
+<!-- Karate Section -->
+<div class="container game-section d-flex flex-wrap flex-row-reverse align-items-center">
+  <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="section-title">Karate</h2>
+      <p>Karate is a martial art that enhances physical fitness, self-discipline, and mental focus. It helps in building strength, agility, and self-defense skills.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="https://via.placeholder.com/600x300.png?text=Karate" alt="Karate" class="card-img-top">
+      </div>
+  </div>
+</div>
+
+
+<!-- Yoga Section -->
+<div class="container game-section d-flex flex-wrap align-items-center">
+  <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="section-title">Yoga</h2>
+      <p>Yoga is a holistic practice that enhances flexibility, strength, and mindfulness. It promotes physical health and mental well-being through a series of poses and breathing techniques.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="https://via.placeholder.com/600x300.png?text=Yoga" alt="Yoga" class="card-img-top">
+      </div>
+  </div>
+</div>
+
   </main>
 
  <!-- Footer Section -->
@@ -176,6 +291,7 @@
       </div>
     </div>
   </div>
+
 </footer>
 <!-- End Footer Section -->
 
